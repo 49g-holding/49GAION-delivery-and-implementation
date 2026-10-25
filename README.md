@@ -39,6 +39,8 @@ Returns follow the Library's design return contract, `library/contracts/design-r
 
 ## Checks
 
+**The Protocol pin.** The checks read `49GAION-protocol` at the commit in `PROTOCOL-PIN` (its schemas and its `no-org-names` scanner), never at `main`, so a change in the Protocol changes nothing here until this repository moves the pin by pull request.
+
 ```
 python3 tools/make_cards.py <49GAION-protocol>/spec/schemas
 ```
