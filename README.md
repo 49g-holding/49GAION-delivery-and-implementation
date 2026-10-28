@@ -4,6 +4,8 @@ The mother repository of the Library part **49GAION Delivery and Implementation*
 
 > **Reading (49GAION DR-0041, DR-0042).** The complete definition of 49GAION, approved by its governing seat on 25 October 2026, is `49GAION-FRAMEWORK.md` in `github.com/49g-holding/49GAION`, with the clarifications of the same day. Where this repository differs from it, the definition governs, and this text is read with it. This part designs an organisation of human positions; how human and how much AI the organisation is, is the `[ORG]AION`'s own design work, prepared by it and decided by the governance seat. Every rule here that names `[ORG]AIOC-OCO` or the human hub reads as the Top Management Group, the hub of the operation, human and AI. The panel is the organisation's own code interface, and the AI chat workspace is its back office. The readings are in [`decisions/DR-0006`](decisions/DR-0006-the-mother-repository-and-the-readings.md). Nothing here is removed.
 
+> **Reading (49GAION DR-0048, DR-0049; `decisions/DR-0007`).** Only AIOCs and HOAC positions: every human place here is a position, and who holds it, and how, is the organisation's own mechanism, outside the system. The acting filler, deputies of human seats and `appoint-acting-filler` are withdrawn.
+
 > **Delivery and Implementation in one page**
 >
 > Delivery and Implementation (DI) takes an organisation's decided design into a running organisation, and stays to run and improve it with the organisation. It is the last stage of the design chain, after Process and Position Design.

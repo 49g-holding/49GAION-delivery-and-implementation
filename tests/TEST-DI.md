@@ -104,7 +104,7 @@ Cases 9, 11 (level 2), 13 (the projection), 14 and 16 (the full export) test fea
 51. A run request for mode C is refused unless `modes_enabled` holds C, and C is set only after H-21 is recorded.
 52. In mode C, every element of the light design is `provisional` until the owner position decides it; none is shown as decided; no number appears that no source or decision gives; no legal, tax, employment or pay advice is given.
 53. Where one position holds every seat, the light design says so and offers a compensating control as a draft, and no rule reads whether it is adopted; when a growth trigger fires, a proposal to move to mode A is raised.
-54. From a sample of an owner's sources, mode C reaches a filed launch package whose every element traces to a source atom or a decision.
+54. From a sample of an owner position's sources, mode C reaches a filed launch package whose every element traces to a source atom or a decision.
 
 ### Accompany
 
