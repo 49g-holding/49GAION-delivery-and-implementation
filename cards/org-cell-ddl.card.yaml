@@ -26,7 +26,6 @@ authority_scope:
   - change-filler
   - retire-unit
   - restart-stopped-unit
-  - appoint-acting-filler
   entity: <entity>
   expires: '2027-10-15'
   authority: delegated

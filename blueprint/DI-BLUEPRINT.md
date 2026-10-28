@@ -37,7 +37,7 @@ blueprint:
 > **What goes in**
 > 1. **Mode A:** the decided PPD release, handed over directly by `[ORG]AIOC-PPD`, by reference and hash, with the decided TOM release it was designed from.
 > 2. **Mode B:** a design made elsewhere, filed as a source in Source Lifecycle.
-> 3. **Mode C:** no design. The owner's sources, in Source Lifecycle; DI builds a light design with the owner. It is switched on only after the launch and accompany parts have given evidence.
+> 3. **Mode C:** no design. The owner position's sources, in Source Lifecycle; DI builds a light design with the owner position. It is switched on only after the launch and accompany parts have given evidence.
 > 4. The organisation's other sources, only from Source Lifecycle, and answers to what they do not say, asked only through its Chief of Staff.
 > 5. Records of the organisation's work, only through a projection owned by top management that removes who did the work, and only after the organisation records its impact assessment.
 >
@@ -78,7 +78,7 @@ blueprint:
 | Mother | 49GAION Delivery and Implementation, part card `v1`. This text is its mother blueprint |
 | Product requirements | `PRD-[ORG]AIOC-DI-001` v0.4, approved by the governing seat on 15 October 2026; its requirement IDs (`FR-n`, `NFR-n`) are cited here |
 | Blueprint version and status | `v0.2.1` · draft · complete, slices 1 to 4 |
-| Accountable seat (`[ORG]HOAC-ACS`) | the DI Delivery Lead, `[ORG]CELL-DDL`, a HOAC position. Who occupies it is top management's own mechanism; this AIOC never sees it (Standard §1.1, items 9 and 10) |
+| Accountable seat (`[ORG]HOAC-ACS`) | the DI Delivery Lead, `[ORG]CELL-DDL`, a HOAC position. Who holds it is the organisation's own mechanism, outside the system; this AIOC never sees it (Standard §1.1, items 9 and 10) |
 | Reports to | the Cell carrying `[ORG]HOAC-TM` |
 | Writing repository | `<org>aioc-di`, plus `-records` for an organisation's runs and `-records-restricted` for run records that touch a Strictly confidential source (Naming Standard R9). The mother text lives in a public repository and holds no organisation data |
 | Code project | `<org>aioc-di`, on the organisation's code platform; it holds the product requirements and the code |
@@ -105,7 +105,7 @@ card:
   wake: { method: "queue", verified: false }
   receives:
     - kind: "run request"                 # a Work Item from the Requesting Authority's Cell, through the HU input port; references only
-      format: "Work Item (Protocol §4.1) whose sources field holds the mode (A, B or C), and one PPD Release reference, the reference of a design filed in Source Lifecycle, or (mode C) the references of the owner's sources"
+      format: "Work Item (Protocol §4.1) whose sources field holds the mode (A, B or C), and one PPD Release reference, the reference of a design filed in Source Lifecycle, or (mode C) the references of the owner position's sources"
       acceptance_test: "TEST-DI v1, cases 1, 18, 19"
       decision_needed: false
     - kind: "release notice"              # from [ORG]AIOC-PPD, directly, through the tool gateway
@@ -212,7 +212,7 @@ card:
     - { id: "di-briefs", name: "Briefs for counsel and finance", tags: ["delivery"] }
     - { id: "di-transition", name: "Transition plan and go-live criteria", tags: ["delivery"] }
     - { id: "di-answers", name: "Answers grounded in the decided design, with verified citations", tags: ["delivery", "assurance"] }
-    - { id: "di-light-design", name: "A light design built with the owner, every element provisional until decided", tags: ["delivery", "small business"] }
+    - { id: "di-light-design", name: "A light design built with the owner position, every element provisional until decided", tags: ["delivery", "small business"] }
     - { id: "di-accompany", name: "The implementation plan, change impact, learning paths, readiness and the go or no-go package", tags: ["delivery", "launch"] }
     - { id: "di-operate", name: "The operating rhythm, logs, forum packs, measures, versions and the value register", tags: ["delivery", "operations"] }
     - { id: "di-improve", name: "Process watching at process level, conformance, proposals and trials", tags: ["delivery", "improvement"] }
@@ -273,7 +273,7 @@ card:
 
 ### 2.1 Organisation table
 
-The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13). Positions only; who occupies each one is top management's own mechanism (Standard §1.1, items 9 and 10).
+The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13). Positions only; who holds each one is the organisation's own mechanism, outside the system (Standard §1.1, items 9 and 10).
 
 | Term in the blueprint | In `<organisation>` |
 |---|---|
@@ -289,7 +289,7 @@ The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13)
 | **The finance position** | named in `deciding_positions`. It alone approves gate L2 and confirms gate L5 of the value register (§5.19) |
 | **The data-protection position** | named in `deciding_positions`. It records the impact assessment before any record of work is read (Annex H) |
 | **The projection** | owned by top management (the Cell carrying `[ORG]HOAC-TM`). It turns records of the organisation's own tools into records of work by process, step, case type, site and system, with every field that identifies who did the work removed (Annex H). DI reads its output only |
-| **The DI Delivery Lead position** | a HOAC position (`[ORG]HOAC-ACS`), a legal persona. Who occupies it is top management's own mechanism; this AIOC never sees it |
+| **The DI Delivery Lead position** | a HOAC position (`[ORG]HOAC-ACS`), a legal persona. Who holds it is the organisation's own mechanism, outside the system; this AIOC never sees it |
 | **The design source** | `[ORG]AIOC-PPD`: it hands over its decided release directly, and receives this AIOC's returns on it |
 | **The operating model** | `[ORG]AIOC-TOM`: its decided release is read by reference from Source Lifecycle; it receives this AIOC's returns on it |
 | **The source of record** | `[ORG]AIOC-SL`: every other source, every question to the organisation, and every filing |
@@ -301,7 +301,7 @@ The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13)
 - **Its role.** It takes the decided design into a running organisation and stays with it. It prepares the launch, accompanies it, keeps the operating rhythm with the organisation, and helps it improve, until the organisation can do each of these without it (§5.24).
 - **Scope.**
   - **It does:**
-    - **Launch:** admit a decided PPD release (mode A) or a design made elsewhere (mode B), or build a light design with the owner (mode C); map it; return every defect of a release to the stage that made it; audit the gaps in two tiers; run the health check; write the procedures under each process; write briefs, and drafts from the organisation's own templates, for counsel and finance; draft the transition plan and the go-live criteria; prepare the decision; file the launch package.
+    - **Launch:** admit a decided PPD release (mode A) or a design made elsewhere (mode B), or build a light design with the owner position (mode C); map it; return every defect of a release to the stage that made it; audit the gaps in two tiers; run the health check; write the procedures under each process; write briefs, and drafts from the organisation's own templates, for counsel and finance; draft the transition plan and the go-live criteria; prepare the decision; file the launch package.
     - **Accompany:** draft the implementation plan by position; set out what changes for each position, and how adoption is measured; build learning paths; assess readiness, write rehearsal scripts and prepare the go or no-go package; keep problem records; track stabilisation.
     - **Operate:** keep the operating rhythm and its single logs; build forum packs and draft minutes; build measures at process and unit level; keep versions with their re-approval dates and acknowledgements; run procedures as checklists; draft quarterly priorities; keep the value register.
     - **Improve:** watch processes through the projection, with their conformance; find bottlenecks, rework and control gaps; propose changes and new processes; design trials and have them judged by another seat; reassess the design on schedule; run the health check each quarter; hand its skills over and prepare the yearly drill without it.
@@ -320,9 +320,9 @@ The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13)
 
 ## 3. Positions
 
-| Position (standard title) | Purpose | Reports to | Run today by | Deputy |
+| Position (standard title) | Purpose | Reports to | Run today by | Cover |
 |---|---|---|---|---|
-| DI Delivery Lead | the accountable position of this AIOC and the owner of its path: owns the fixed tests of its parts; rules on contested review findings; accepts a reduced review level within the TM Cell's permission; attests the method. Answers for the method, never for the organisation's choices | the Cell carrying `[ORG]HOAC-TM` | a HOAC position (`[ORG]HOAC-ACS`); who occupies it is top management's own mechanism, never seen by this AIOC | as top management arranges (`appoint-acting-filler`, Standard §4.1, item 12) |
+| DI Delivery Lead | the accountable position of this AIOC and the owner of its path: owns the fixed tests of its parts; rules on contested review findings; accepts a reduced review level within the TM Cell's permission; attests the method. Answers for the method, never for the organisation's choices | the Cell carrying `[ORG]HOAC-TM` | a HOAC position (`[ORG]HOAC-ACS`); who holds it is the organisation's own mechanism, outside the system, never seen by this AIOC | the organisation's own mechanism, outside the system |
 | Chief of Staff | keep each run moving, honest and traced; the only door to PPD, TOM and Source Lifecycle | DI Delivery Lead | an agent (`[ORG]CELL-COSDI`) | none; the run halts |
 | Design Mapper | read a decided release, or map a design made elsewhere, and draft returns | Chief of Staff | an agent (`[ORG]CELL-DDM`) | none; the step halts |
 | Gap Auditor | run the gap checks in two tiers | Chief of Staff | an agent (`[ORG]CELL-DGA`) | none; the step halts |
@@ -333,7 +333,7 @@ The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13)
 | Answer Guide | draft each answer from the decided design | Chief of Staff | an agent (`[ORG]CELL-DAG`) | none; the question waits |
 | Citation Verifier | check that each citation of an answer or a draft resolves and supports it | Chief of Staff | an agent (`[ORG]CELL-DCV`), on an engine of another family than the writer's | none; the answer waits |
 | Blind Reviewer, seats A–C | review a locked output, alone first, then in debate | Chief of Staff | agents (`[ORG]CELL-DBRA` to `[ORG]CELL-DBRC`) | none; any seat covers another |
-| Light Designer | build a light design with the owner, in mode C | Chief of Staff | an agent (`[ORG]CELL-DLD`) | none; the step halts |
+| Light Designer | build a light design with the owner position, in mode C | Chief of Staff | an agent (`[ORG]CELL-DLD`) | none; the step halts |
 | Implementation Planner | the implementation plan by position | Chief of Staff | an agent (`[ORG]CELL-DIP`) | none; the step halts |
 | Change Analyst | what changes for each position; the stakeholder register; adoption measures | Chief of Staff | an agent (`[ORG]CELL-DCA`) | none; the step halts |
 | Learning Builder | a learning path per position, with short checks | Chief of Staff | an agent (`[ORG]CELL-DLB`) | none; the step halts |
@@ -421,7 +421,7 @@ Default, with this AIOC's standard format, the **Input Pack**, as in the TOM blu
 4. **A new release** makes a new pack version. The elements that changed re-open the work that cites them; decided work that cites nothing changed is kept by hash.
 5. **Nothing that arrives through a human port is a source.** A run request is admitted only if it carries references. A question from a position is never a source and never changes the design.
 6. The pack's ID is `DII-` followed by the SHA-256 of its body.
-7. **Mode C. New in v0.2.0.** The owner's sources in Source Lifecycle are cut into atoms and labelled as in mode B. There is no design to map: the Light Designer builds one with the owner (§5.11).
+7. **Mode C. New in v0.2.0.** The owner position's sources in Source Lifecycle are cut into atoms and labelled as in mode B. There is no design to map: the Light Designer builds one with the owner position (§5.11).
 8. **Records of work are not sources of the design.** They enter only through the projection, while Annex H holds, by reference, with no field that identifies who did the work. An item with such a field is refused whole, and nothing of it is kept.
 9. **Change notices** from Source Lifecycle enter as source references with their change kind (a new product, site, market or law), and open the work of §5.22.
 #### Process (SOP)
@@ -462,7 +462,7 @@ The launch has five stages (§5.0, S0 to S4), performed by the Input socket (§4
 |---|---|---|---|---|---|---|---|
 | S0 | **Admit** | `admitting` | T0 | The run Work Item (references only). Mode A: the release notice of `[ORG]AIOC-PPD`. Mode B: the outside design's reference in Source Lifecycle. The connection grants. The engine register. | Input Pack `P0`; the run record, opened. | **T0** (Annex C.2): references only; an enabled mode; the release check (§4.3, part 3) or the source check passes; the connections are signed and in scope; `requesting_authority_cell` and `deciding_positions` are set; RP0 settled. | Requesting Authority: opens the run; names the deciding positions. |
 | S1 | **Map** | `mapping` | T1 | P0. | The **design map** (Annex A.1); return drafts (Annex B). | **T1**: mode A: every process, position, unit, decision, control and forum in scope is `used`, `returned` or `out of scope` with a reason; mode B: every element of the outside design is `mapped`, `not mapped` (with the reason) or `out of scope`, and none is rewritten; every return draft passed RP1 and was sent. | Requesting Authority: the scope, if the request did not name it; mode B rows `not mapped`. |
-| S1C | **Build** (mode C) | `building` | T1C | P0: the owner's sources. | The **light design** (Annex A.20), every element `provisional` until decided. | **T1C**: every element of the light design is `provisional` or decided, with its source atoms or the decision that made it; no element states a number that no source or decision gives; no element gives legal, tax, employment or pay advice; where one position holds every seat, the design says so and offers a compensating control as a draft; RP1 settled. S2 to S4 then run on the light design as on a design map. | The owner position: each element. |
+| S1C | **Build** (mode C) | `building` | T1C | P0: the owner position's sources. | The **light design** (Annex A.20), every element `provisional` until decided. | **T1C**: every element of the light design is `provisional` or decided, with its source atoms or the decision that made it; no element states a number that no source or decision gives; no element gives legal, tax, employment or pay advice; where one position holds every seat, the design says so and offers a compensating control as a draft; RP1 settled. S2 to S4 then run on the light design as on a design map. | The owner position: each element. |
 | S2 | **Diagnose** | `diagnosing` | T2 | The design map; P0. | The **gap report** (Annex A.2); the **health check** (Annex A.3). | **T2**: every check of Annex F has a result (`met`, `gap`, `unknown`) with evidence; every gap has its tier, consequence, evidence, proposed fix and route; every item of the health check has a result with evidence; RP2 settled with no unresolved `MATERIAL` finding. | Requesting Authority: the route of each gap (return, decision, or prepare). |
 | S3 | **Prepare** | `preparing` | T3 | The design map; the decided gap routes; P0. | The **procedures** (Annex A.4), critical processes first; the **briefs** (Annex A.5); the **transition plan** and the **go-live criteria** (Annex A.6). | **T3**: every procedure step traces to a process step; every brief carries its entity, jurisdiction, draft mark and addressee position; every go-live criterion has its measure, evidence source and a threshold that is a decision row; the go or no-go deciding position is named; every citation passed the Citation Verifier; RP3 settled with no unresolved `MATERIAL` finding. | Requesting Authority: assumptions; contradictions with the design. |
 | S4 | **Decide and file** | `deciding`; end states `filed` | T4, then T5 | Every reviewed part of S1 to S3, by hash; the settled review records. | The **Decision Package** (Annex A.8); then the **launch package** manifest and its parts; the filing receipt; the notice to the deciding positions. | **T4**: every element decided (`ACCEPT`, `CORRECT`, `REJECT`) by its deciding position; silence decided nothing. **T5**: the manifest is content-addressed; every element traces to a design element or a source atom; the package lint passes; the package is filed and reads back by hash. | The deciding positions: each element. The Delivery Lead: the attestation. |
@@ -804,7 +804,7 @@ TEST-DI-COSDI v1 (cases 40, 41, 94) · result `NOT_RUN`
 | Name | Light Design |
 | Purpose | for a small or personal business with no design, build with its owner a light design: the decisions and who takes them, a checklist for each process, who does what, and a weekly rhythm (FR-04). **New** in v0.2.0 |
 | Trigger | T0 passed in mode C |
-| Inputs | the Input Pack: the owner's sources in Source Lifecycle, cut into atoms and labelled |
+| Inputs | the Input Pack: the owner position's sources in Source Lifecycle, cut into atoms and labelled |
 | Outputs | the light design (Annex A.20) |
 | Performed by | the Light Designer (`[ORG]CELL-DLD`) in the Diagnosis Pod (`[ORG]POD-DD`) |
 | Done when | T1C (§5.0) |
@@ -820,7 +820,7 @@ TEST-DI-COSDI v1 (cases 40, 41, 94) · result `NOT_RUN`
 | Name | Light Designer |
 | Position and seat | Light Designer; accountable seat: the DI Delivery Lead |
 | Performed by | an agent (`[ORG]CELL-DLD`, full name DI Light Designer) |
-| Purpose | the light design, with the owner |
+| Purpose | the light design, with the owner position |
 | Authority limits | alone: draft elements from the pack; never: present an element as decided, state a number no source or decision gives, give legal, tax, employment or pay advice, ask a person, name a person |
 | Write location | the run record |
 | Reports to | Chief of Staff |
@@ -1352,7 +1352,7 @@ TEST-DI-COSDI v1 (case 89) · result `NOT_RUN`
 | Checklist runs | the organisation's own records store, or its workflow tool | records of the organisation's work; read here only through the projection |
 | Records of work | the organisation's own tools; the projection is top management's | references only; kept no longer than the cycle that uses them (Annex H) |
 | Learning check results | the learner position only | never here |
-| The link between positions and whoever occupies them | not here: top management's own mechanism (Standard §1.1, items 9 and 10) | never in this AIOC |
+| The link between positions and whoever holds them | not here: the organisation's own mechanism, outside the system (Standard §1.1, items 9 and 10) | never in this AIOC |
 | Work Items | the shared queue | Protocol §2 |
 
 - **References, not copies.** Atom text and release text are held only in the run workspace. Records store IDs and hashes.
@@ -1371,7 +1371,7 @@ TEST-DI-COSDI v1 (case 89) · result `NOT_RUN`
 | The schemas of Annex A | field lists in Annex A, made into schemas before the first run; returns use the Library contract `library/contracts/design-return.schema.json` of `49GAION-protocol` | build items in the code project |
 | Engine calls | through the tool gateway, bound per call from the engine register | — |
 | The code steps of v0.2.0: the plan check; the version register, its reminders, notices and acknowledgements; the checklist runner; the roll-up check; the dashboards' refresh; the value register's warning rules; the conformance computation; the ladder's enforcement and record; the export and its re-import check | new in this AIOC's code project | build items in the code project |
-| The projection that removes who did the work | top management's own, over the organisation's tools (Annex H) | a build item owned and run by the Cell carrying `[ORG]HOAC-TM` |
+| The projection that removes who did the work | a build of top management, over the organisation's tools (Annex H) | a build item owned and run by the Cell carrying `[ORG]HOAC-TM` |
 | The connectors to the organisation's tools (FR-31) | new | each a signed connection; build items in the code project |
 | The skills library | new; a method catalogue of this AIOC | written and versioned in the code project |
 | The council's engines (FR-29) | the engine register at the tool gateway | added under `change-gateway-policy` |
@@ -1403,7 +1403,7 @@ TEST-DI-COSDI v1 (case 89) · result `NOT_RUN`
 | M-09 | Roll-up check | no figure leaves on fewer than `min_group` positions or for a single position | — | decided, not built | build |
 | M-10 | Version register | verified or due; reminders; notices; acknowledgements by version | — | decided, not built | build |
 | M-11 | Checklist runner | runs a procedure per case, holding each gate for its position's approval | — | decided, not built | build |
-| M-12 | The projection | removes who did the work before any record reaches this AIOC | top management's own mechanism | decided, not built | build (by the Cell carrying `[ORG]HOAC-TM`) |
+| M-12 | The projection | removes who did the work before any record reaches this AIOC | a build of top management | decided, not built | build (by the Cell carrying `[ORG]HOAC-TM`) |
 | M-13 | Conformance computation | compares records of work with the designed process, by process dimensions only | — | decided, not built | build |
 | M-14 | Value warning rules | warns of value or a date at risk, by written rules | — | decided, not built | build |
 | M-15 | Export and re-import | the full export, proven by re-import into a fresh instance | — | decided, not built | build |
@@ -1508,7 +1508,7 @@ Every decision that only a human seat can take is listed here once. Silence deci
 | ID | Decision | Seat | Default |
 |---|---|---|---|
 | H-01 | Name the Requesting Authority's Cell: the GOV Cell itself, or a human Cell to which it delegates these decisions (`delegate-authority`) | GOV | none: T0 fails |
-| H-02 | **Top management's own mechanism.** Arrange the DI Delivery Lead position and any HOAC position added to this AIOC. Nothing of who occupies them enters this blueprint | the Cell carrying `[ORG]HOAC-TM` | the position is vacant: the AIOC does not join |
+| H-02 | **The organisation's own mechanism.** Who holds the DI Delivery Lead position and any HOAC position added to this AIOC, and how, is decided outside the system (`49GAION/DR-0048`, `DR-0049`). Nothing of it enters this blueprint | the organisation's own mechanism, outside the system | the position is empty: the AIOC does not join |
 | H-03 | Install `[ORG]AIOC-DI` (`create-or-install-unit`); its `change-parent`; its `restart-stopped-unit` | the Cell carrying `[ORG]HOAC-TM` | none |
 | H-04 | Accept the PPD, TOM and Source Lifecycle changes this AIOC needs (`upstream/PROPOSALS.md`, items 1 to 4; items 1 and 2 are made in the PPD blueprint `v0.4.0` and the TOM blueprint `v0.5.0`) | the Cell carrying `[ORG]HOAC-TM`, made through OCO | required before joining |
 | H-05 | The connection grants to PPD, TOM and Source Lifecycle (`connect-external-port`), their widening and revocation | the `[ORG]HOAC-ACS` positions over those AIOCs | none: T0 fails |
@@ -1659,7 +1659,7 @@ parts:
       accountable_to: "[ORG]CELL-TMS"       # example code of the Cell carrying [ORG]HOAC-TM
       entity: "<entity>"
       authority_scope:
-        decision_types: ["change-fixed-test-or-threshold", "create-or-install-unit", "change-filler", "retire-unit", "restart-stopped-unit", "appoint-acting-filler"]
+        decision_types: ["change-fixed-test-or-threshold", "create-or-install-unit", "change-filler", "retire-unit", "restart-stopped-unit"]
         entity: "<entity>"
         expires: "2027-10-15"                # placeholder; each organisation sets it
         authority: "delegated"

@@ -10,7 +10,7 @@
 | Fixed test | TEST-DI v1: 94 cases and DDL-1 to DDL-5 · `NOT_RUN`, by policy: the map is written first |
 | Unit cards | 34 Pod and Cell cards, generated from blueprint §17. `tools/make_cards.py` against `49GAION-protocol` `spec/schemas` on main, 19 October 2026: **0 errors** |
 | Bot identity cards | 26, one for each AI Cell; none signs; no shared credential; **0 errors** |
-| HOAC positions | one, the DI Delivery Lead (`[ORG]HOAC-ACS`). Who occupies it is top management's own mechanism |
+| HOAC positions | one, the DI Delivery Lead (`[ORG]HOAC-ACS`). Who holds it is the organisation's own mechanism, outside the system |
 | Joining | blocked: needs the Source Lifecycle changes (`upstream/PROPOSALS.md`, items 3 and 4) and the PPD `v0.4.0` and TOM `v0.5.0` blueprints installed; the card's claims have not passed fixed samples |
 | Installed in any `[ORG]AION` | no |
 | Mother repository | `github.com/49g-holding/49GAION-delivery-and-implementation`, public, from 25 October 2026 (`decisions/DR-0006`): every file of the first instance's repository at its pinned commit `44d7dbf`, unchanged; the blueprint's SHA-256 is the pinned one. The Library pin moves here once this text is merged |
