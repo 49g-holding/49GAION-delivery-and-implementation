@@ -51,7 +51,7 @@ blueprint:
 >
 > **Who decides.** DI decides nothing for the organisation. What it may do is set per class of action by the owner position: level 0, read; level 1, propose (a draft enters a record only when a position inserts it); level 2, apply a reversible change with no legal, pay or employment effect, within a class the owner position signed in advance. No level allows a type of the Human Floor signature list. The go or no-go is always the deciding position's. Any accountable position can stop DI at once.
 >
-> **Processes, not persons.** DI addresses positions only, never ranks, scores or watches the occupant of a position, and shows no measure for a single position.
+> **Processes, not persons.** DI addresses positions only, never ranks, scores or watches a single position, and shows no measure for one.
 
 **Where this blueprint stands.** Complete draft, slices 1 to 4. The stages, their inputs, outputs and done-tests are set (§5.0). The review rule it shares with `[ORG]AIOC-PPD` and `[ORG]AIOC-TOM` is carried by section (§5.9; Annex E). The permission ladder is Annex G; records of work and their conditions are Annex H. The decisions only a human seat can take are listed once, in §13.
 
@@ -293,7 +293,7 @@ The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13)
 | **The design source** | `[ORG]AIOC-PPD`: it hands over its decided release directly, and receives this AIOC's returns on it |
 | **The operating model** | `[ORG]AIOC-TOM`: its decided release is read by reference from Source Lifecycle; it receives this AIOC's returns on it |
 | **The source of record** | `[ORG]AIOC-SL`: every other source, every question to the organisation, and every filing |
-| **The engine register** | held at the tool gateway, in the Charter (Standard §4.4, item 11); read as `[ORG]AIOC-TOM` reads it (TOM blueprint `v0.5.0`, Annex E.12) |
+| **The engine register** | held at the tool gateway, which is carried by the Charter and run as code beside the core, outside the reach of every AI (Standard §4.4, item 11; `49GAION/DR-0052`); read as `[ORG]AIOC-TOM` reads it (TOM blueprint `v0.6.0`, Annex E.12) |
 
 ### 2.2 Placement
 
@@ -306,7 +306,7 @@ The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13)
     - **Operate:** keep the operating rhythm and its single logs; build forum packs and draft minutes; build measures at process and unit level; keep versions with their re-approval dates and acknowledgements; run procedures as checklists; draft quarterly priorities; keep the value register.
     - **Improve:** watch processes through the projection, with their conformance; find bottlenecks, rework and control gaps; propose changes and new processes; design trials and have them judged by another seat; reassess the design on schedule; run the health check each quarter; hand its skills over and prepare the yearly drill without it.
     - **Always:** answer positions' questions from the decided design, with verified citations; trace every artefact both ways; export everything with its trace.
-  - **It does not:** decide anything for the organisation, the go or no-go included; give legal, tax, employment or pay advice; state an amount that no source or decision gives; ask any person anything about the organisation; name a person, or read who occupies a position; rank, score or watch the occupant of a position, or show a measure for a single position; change a design release; read records of work except through the projection, after Annex H holds; apply a change outside a class signed at level 2 (Annex G); act on a type of the Human Floor signature list.
+  - **It does not:** decide anything for the organisation, the go or no-go included; give legal, tax, employment or pay advice; state an amount that no source or decision gives; ask any person anything about the organisation; name a person, or read who occupies a position; rank, score or watch a single position, or show a measure for one; change a design release; read records of work except through the projection, after Annex H holds; apply a change outside a class signed at level 2 (Annex G); act on a type of the Human Floor signature list.
 - **Shapes it serves.** Any shape the design covers: one owner's work, a single entity, a group of entities, or a group with independent institutions inside it. Where a design covers several entities or jurisdictions, every brief and every go-live criterion records its entity and jurisdiction.
 - **Boundaries with other AIOCs.**
   - **`[ORG]AIOC-PPD`** designs processes, positions and units. This AIOC reads its decided release and returns defects; it never changes a release, and proposes later changes for decision (§5.22). A return is a request, never a change (§5.1; Annex B).
@@ -1137,7 +1137,7 @@ TEST-DI-DVT v1 · result `NOT_RUN`
 | Outputs | the version register, the acknowledgements and the checklist runs (Annex A.17); notices |
 | Performed by | the Chief of Staff, by code steps; no AI Cell writes these records |
 | Done when | every element shows `verified` or `due`; every changed version has a notice to every affected position and its acknowledgements by version |
-| Rules | 1. **Verified or due.** On its re-approval date an element shows `due`, never `verified`, until its owner position re-approves it; a reminder is raised on the date. 2. **Acknowledgement by version.** Each position a changed version concerns acknowledges that version through its HU port; the record holds the version and the position code. Only the gateway links an acknowledgement to whoever occupies the position. 3. **Notices.** A changed version sends a notice to every affected position. Pending acknowledgements are shown by version, never by position. 4. **Checklists.** A procedure runs as a checklist per case, with its gates and the approvals of the deciding positions, and an audit trail; or it is exported to the organisation's own workflow tool. 5. **Approvals are positions' acts.** An approval inside a checklist is always a deciding position's act at the gateway, never this AIOC's. 6. **Cases in flight.** A changed procedure applies to new cases; cases in flight follow the declared rule (`in_flight_rule`). 7. **The organisation's records.** Checklist runs are records of the organisation's work. This AIOC reads them for measures only through the projection (Annex H). |
+| Rules | 1. **Verified or due.** On its re-approval date an element shows `due`, never `verified`, until its owner position re-approves it; a reminder is raised on the date. 2. **Acknowledgement by version.** Each position a changed version concerns acknowledges that version through its HU port; the record holds the version and the position code. The gateway checks the credential the organisation's mechanism issued for that position; it never links an acknowledgement to a natural person (`49GAION/DR-0049`, `DR-0052`). 3. **Notices.** A changed version sends a notice to every affected position. Pending acknowledgements are shown by version, never by position. 4. **Checklists.** A procedure runs as a checklist per case, with its gates and the approvals of the deciding positions, and an audit trail; or it is exported to the organisation's own workflow tool. 5. **Approvals are positions' acts.** An approval inside a checklist is always a deciding position's act at the gateway, never this AIOC's. 6. **Cases in flight.** A changed procedure applies to new cases; cases in flight follow the declared rule (`in_flight_rule`). 7. **The organisation's records.** Checklist runs are records of the organisation's work. This AIOC reads them for measures only through the projection (Annex H). |
 
 #### Process (SOP)
 1. **Chief of Staff**: on each decided version, update the register, file the version into Source Lifecycle and send the notices → *version register; living design filing* (evidence: the filing receipt).
@@ -1789,7 +1789,7 @@ Every part is a versioned, content-addressed object. Every element carries an ID
 
 **A.16 Measures and dashboards** (service records). Per measure: `measure_id`; `process_id` or `unit_id`; `step_id` or none; `definition`; `unit`; `source`; `target` (decision reference, or `not set`); `level` (`process`, `step`, `unit`); `positions_count` (at least `min_group`, or `rolled_up_to` the parent unit). Per dashboard figure: `measure_id`, `value`, `read_at`, `source_ref`. Adoption funnel, where switched on: per step, counts that entered and completed, aggregated.
 
-**A.17 Version register, acknowledgements and checklist runs** (service records). Version register, per element: `element_id`, `kind` (process, procedure, policy, job description, forum), `version`, `owner_position`, `approved_by`, `re_approval_due`, `status` (`verified`, `due`), `filed_ref`. Acknowledgement: `version_ref`, `position_id`, `acknowledged_at`; the sign-in behind it is held at the gateway only. Checklist run, per case: `case_id`, `procedure_ref` (its version), `gates[]` {`gate`, `approved_by` (a position's act at the gateway)}, `trail`, `in_flight_rule` (as applied).
+**A.17 Version register, acknowledgements and checklist runs** (service records). Version register, per element: `element_id`, `kind` (process, procedure, policy, job description, forum), `version`, `owner_position`, `approved_by`, `re_approval_due`, `status` (`verified`, `due`), `filed_ref`. Acknowledgement: `version_ref`, `position_id`, `acknowledged_at`; the gateway checks the position's credential with a fresh live sign-in and keeps no reference to a person. Checklist run, per case: `case_id`, `procedure_ref` (its version), `gates[]` {`gate`, `approved_by` (a position's act at the gateway)}, `trail`, `in_flight_rule` (as applied).
 
 **A.18 Problem record and issue list** (service records). `problem_id` (`PRB-n`), `reported_by` (position code), `process_id`, `step_id`, `statement`, `evidence`, `cause`, `options[]` {option, trade-offs}, `recommendation`, `deciding_position`, `decision` (reference), `actions` (action IDs). Issue list, per forum: `problem_id`s in order, each with its `effect` on the process and its measures.
 
@@ -1833,7 +1833,7 @@ Returns follow the Library's design return contract, `library/contracts/design-r
 3. Give legal, tax, employment or pay advice, write a final legal text, or state an amount that no source or decision gives.
 4. Ask any person anything about the organisation, or send a request that names a person.
 5. Name a person, read who occupies a position, or prepare a named offer.
-6. Rank, score or watch the occupant of a position, infer emotion, or show a measure for a single position.
+6. Rank, score or watch a single position, infer emotion, or show a measure for one.
 7. Read records of the organisation's work outside the projection, or before Annex H holds.
 8. Insert a draft into a live record, log or plan; apply a change outside a class signed at level 2 (Annex G).
 9. Answer a question from outside the decided design, or send an answer or draft whose citation failed verification.
@@ -1849,7 +1849,7 @@ Returns follow the Library's design return contract, `library/contracts/design-r
 
 ## Annex E. What is carried from the Target Operating Model blueprint
 
-This AIOC carries these rules from the blueprint of `[ORG]AIOC-TOM` `v0.6.0` (its writing repository, `<org>aioc-tom`), by section, not by copy, as `[ORG]AIOC-PPD` `v0.3.0` carries them (its Annex E). A change there reaches this AIOC only when this annex pins the new version.
+This AIOC carries these rules from the blueprint of `[ORG]AIOC-TOM` `v0.6.0` (its writing repository, `<org>aioc-tom`), by section, not by copy, as `[ORG]AIOC-PPD` `v0.5.0` carries them (its Annex E), the version of PPD that carries TOM `v0.6.0`. A change there reaches this AIOC only when this annex pins the new version.
 
 | Rule | TOM section | Read here with |
 |---|---|---|

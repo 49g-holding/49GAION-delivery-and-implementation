@@ -51,7 +51,7 @@ It must report 0 errors.
 
 ## How a change is made
 
-A change is a pull request, reviewed by someone other than its writer. A decided text is never edited; a change is a new version that names what it supersedes.
+A change is a pull request, reviewed by a party other than its writer. A decided text is never edited; a change is a new version that names what it supersedes.
 
 ## Owner and licence
 
