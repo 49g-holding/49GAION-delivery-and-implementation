@@ -18,7 +18,7 @@ The mother repository of the Library part **49GAION Delivery and Implementation*
 
 The writing repository of **`[ORG]AIOC-DI`, Delivery and Implementation**: the mother text of the 49GAION Library part of the same name (49GAION Standard §3.1, item 5, and its Protocol section §20). In each organisation this repository is named `<org>aioc-di` (Naming Standard R9). It is written for any organisation and holds no organisation data.
 
-**Status: draft `v0.2.2`, 29 October 2026: the release of the records since `v0.2.1`, positions only among them (`decisions/DR-0008`); `v0.2.1`, 19 October 2026: the Chief of Staff takes its COS code `[ORG]CELL-COSDI` (`decisions/DR-0005`); it builds on `v0.2.0`, complete, slices 1 to 4, 18 October 2026 (`decisions/DR-0004`). Nothing here has run; every fixed test reads `NOT_RUN`.**
+**Status: draft `v0.2.3`, 29 October 2026: corrections under `49GAION/DR-0052` (`decisions/DR-0009`); `v0.2.2`, 29 October 2026: the release of the records since `v0.2.1`, positions only among them (`decisions/DR-0008`); `v0.2.1`, 19 October 2026: the Chief of Staff takes its COS code `[ORG]CELL-COSDI` (`decisions/DR-0005`); it builds on `v0.2.0`, complete, slices 1 to 4, 18 October 2026 (`decisions/DR-0004`). Nothing here has run; every fixed test reads `NOT_RUN`.**
 
 ## Where to read
 
@@ -51,7 +51,7 @@ It must report 0 errors.
 
 ## How a change is made
 
-A change is a pull request, reviewed by someone other than its writer. A decided text is never edited; a change is a new version that names what it supersedes.
+A change is a pull request, reviewed by a party other than its writer. A decided text is never edited; a change is a new version that names what it supersedes.
 
 ## Owner and licence
 

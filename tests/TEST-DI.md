@@ -20,7 +20,7 @@ Cases 9, 11 (level 2), 13 (the projection), 14 and 16 (the full export) test fea
 10. A draft enters a record, log or plan only when a position inserts it.
 11. A level-2 change is reversible, has no legal, pay or employment effect, is a new version with rollback and is reported the same day; a type of the Human Floor signature list is refused at every level.
 12. A stop from any accountable position takes effect at once, outside the part's chat, and is never gated.
-13. No output ranks, scores or watches the occupant of a position, infers emotion, or shows a measure for a single position; records of work enter only through the projection, and only after the impact assessment is recorded.
+13. No output ranks, scores or watches a single position, infers emotion, or shows a measure for a single position; records of work enter only through the projection, and only after the impact assessment is recorded.
 14. A trial is judged by a seat other than the one that proposed it.
 15. A connection is used only within its signed scope; after revocation, a read through it is refused.
 16. Every artefact resolves to its design element, deciding position and decision, and back; a full export re-imports into a fresh instance.

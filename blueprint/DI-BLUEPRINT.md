@@ -7,7 +7,7 @@ blueprint:
   organisation: "<organisation>"          # filled in each organisation's own copy
   type: "specialised"
   org_aion: "[ORG]AION"
-  blueprint_version: "v0.2.2"
+  blueprint_version: "v0.2.3"
   status: "draft"
   template:
     name: "49GAION AIOC Blueprint Template"
@@ -26,7 +26,7 @@ blueprint:
     functional: ["Intake and Design Map", "Needs Requests", "Gap Audit", "Health Check", "Procedure Writing", "Briefs and Drafts", "Transition and Go-live Criteria", "Answers", "Independent Review", "Decision Package and Filing", "Light Design", "Implementation Plan", "Change Impact and Adoption", "Learning Paths", "Readiness and Go-live", "Problem Records", "Operating Rhythm", "Measures", "Value Register", "Versions and Checklists", "Process Watching", "Proposals", "Trials", "Hand-over and Mentor", "Export"]
 ```
 
-# Blueprint · `[ORG]AIOC-DI` · Delivery and Implementation · `v0.2.2`
+# Blueprint · `[ORG]AIOC-DI` · Delivery and Implementation · `v0.2.3`
 
 **Draft, 15 October 2026. v0.1.1 and v0.1.2, 16 October 2026: the answers to its returns, and the value case and priority carried unchanged (`decisions/DR-0002`, `DR-0003`). v0.2.0, 18 October 2026: complete, on the governing seat's direction to complete this stage (`decisions/DR-0004`). v0.2.1, 19 October 2026: the Chief of Staff takes its COS code `[ORG]CELL-COSDI` (`decisions/DR-0005`).** Written by `[ORG]AIOC-OCO` on the directions recorded in `decisions/DR-0001` to `decisions/DR-0004`. This is the blueprint of Delivery and Implementation, written for any organisation as the mother text of the Library part 49GAION Delivery and Implementation. It now covers **all four slices** of the product requirements: the gap audit and the launch essentials (slice 1); accompanying the launch, with the operating rhythm (slice 2); improving the running organisation (slice 3); and the small business with no design (slice 4). The slices stay the order in which the parts are built and switched on (§5.0, "The slices"). Every rule rests on a 49GAION text, on the blueprints of `[ORG]AIOC-PPD` or `[ORG]AIOC-TOM` (cited by section and version), or on the product requirements of this part (`PRD-[ORG]AIOC-DI-001` v0.4, in its code project), or is new here and marked **New**. Nothing here has run. Every fixed test reads `NOT_RUN`.
 
@@ -51,7 +51,7 @@ blueprint:
 >
 > **Who decides.** DI decides nothing for the organisation. What it may do is set per class of action by the owner position: level 0, read; level 1, propose (a draft enters a record only when a position inserts it); level 2, apply a reversible change with no legal, pay or employment effect, within a class the owner position signed in advance. No level allows a type of the Human Floor signature list. The go or no-go is always the deciding position's. Any accountable position can stop DI at once.
 >
-> **Processes, not persons.** DI addresses positions only, never ranks, scores or watches the occupant of a position, and shows no measure for a single position.
+> **Processes, not persons.** DI addresses positions only, never ranks, scores or watches a single position, and shows no measure for one.
 
 **Where this blueprint stands.** Complete draft, slices 1 to 4. The stages, their inputs, outputs and done-tests are set (§5.0). The review rule it shares with `[ORG]AIOC-PPD` and `[ORG]AIOC-TOM` is carried by section (§5.9; Annex E). The permission ladder is Annex G; records of work and their conditions are Annex H. The decisions only a human seat can take are listed once, in §13.
 
@@ -77,7 +77,7 @@ blueprint:
 | Template | 49GAION AIOC Blueprint Template `v1.6.0`, at `acdcbe5` |
 | Mother | 49GAION Delivery and Implementation, part card `v1`. This text is its mother blueprint |
 | Product requirements | `PRD-[ORG]AIOC-DI-001` v0.4, approved by the governing seat on 15 October 2026; its requirement IDs (`FR-n`, `NFR-n`) are cited here |
-| Blueprint version and status | `v0.2.2` · draft · complete, slices 1 to 4 |
+| Blueprint version and status | `v0.2.3` · draft · complete, slices 1 to 4 |
 | Accountable seat (`[ORG]HOAC-ACS`) | the DI Delivery Lead, `[ORG]CELL-DDL`, a HOAC position. Who holds it is the organisation's own mechanism, outside the system; this AIOC never sees it (Standard §1.1, items 9 and 10) |
 | Reports to | the Cell carrying `[ORG]HOAC-TM` |
 | Writing repository | `<org>aioc-di`, plus `-records` for an organisation's runs and `-records-restricted` for run records that touch a Strictly confidential source (Naming Standard R9). The mother text lives in a public repository and holds no organisation data |
@@ -100,7 +100,7 @@ card:
   inner_units: ["[ORG]CELL-DDL", "[ORG]CELL-COSDI", "[ORG]POD-DD", "[ORG]POD-DP", "[ORG]POD-DA", "[ORG]POD-DR", "[ORG]POD-DL", "[ORG]POD-DO", "[ORG]POD-DCI"]
   type: "specialised"
   org_aion: "[ORG]AION"
-  card_version: "v0.2.2"
+  card_version: "v0.2.3"
   input_door: "Chief of Staff"
   wake: { method: "queue", verified: false }
   receives:
@@ -186,7 +186,7 @@ card:
   anatomy:
     panel: { health: { tests: true, metrics: ["stuck", "returned", "late", "run state", "returns open", "returns answered", "needs open", "needs past deadline", "gaps by tier", "gaps by state", "procedures by state", "briefs by state", "go-live criteria by state", "answers given", "answers 'I do not know'", "citations refused by the verifier", "reviews held", "review budget used", "tasks by state", "go-live criteria met, not met, unknown", "rehearsal defects open", "actions past their date", "risks and issues open", "milestone date changes", "packs built", "minutes awaiting preview", "versions due", "acknowledgements pending, by version", "initiatives by gate", "value planned and realised", "proposals by state", "trials running", "conformance by process", "hand-over items left", "ladder level by class"] } }
     back_office: { converses_with_humans: true, hosts: ["Chief of Staff", "Office"], protocol_traffic: true }
-    definition: { location: "<org>aioc-di, blueprint/DI-BLUEPRINT.md", version: "v0.2.2" }
+    definition: { location: "<org>aioc-di, blueprint/DI-BLUEPRINT.md", version: "v0.2.3" }
     delivery: { rollback: "one-click" }
     connectors:
       - { role: "design source", connector: "[ORG]AIOC-PPD release port", access_managed_in: "panel" }   # the grant is signed at the tool gateway as connect-external-port
@@ -195,10 +195,10 @@ card:
       - { role: "records of work", connector: "the projection owned by top management over the organisation's own tools", access_managed_in: "panel" }   # read only; signed as connect-external-port; off until Annex H holds
     gateway: { metering_id: "<per-AIOC metering id>" }
   full_name: "Delivery and Implementation"
-  version: "0.2.2"
+  version: "0.2.3"
   lineage: { id: "[ORG]AIOC-DI", version: "0.2.2", relation: "original" }
   lifecycle_state: "designed"
-  blueprint_version: "v0.2.2"
+  blueprint_version: "v0.2.3"
   template_version: "v1.6.0"
   accountable_to: "[ORG]CELL-TMS"         # example code of the Cell carrying [ORG]HOAC-TM (Naming Standard R15); never a Cell inside this AIOC
   top_cell: "[ORG]CELL-DDL"
@@ -293,7 +293,7 @@ The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13)
 | **The design source** | `[ORG]AIOC-PPD`: it hands over its decided release directly, and receives this AIOC's returns on it |
 | **The operating model** | `[ORG]AIOC-TOM`: its decided release is read by reference from Source Lifecycle; it receives this AIOC's returns on it |
 | **The source of record** | `[ORG]AIOC-SL`: every other source, every question to the organisation, and every filing |
-| **The engine register** | held at the tool gateway, in the Charter (Standard §4.4, item 11); read as `[ORG]AIOC-TOM` reads it (TOM blueprint `v0.5.0`, Annex E.12) |
+| **The engine register** | held at the tool gateway, which is carried by the Charter and run as code beside the core, outside the reach of every AI (Standard §4.4, item 11; `49GAION/DR-0052`); read as `[ORG]AIOC-TOM` reads it (TOM blueprint `v0.6.0`, Annex E.12) |
 
 ### 2.2 Placement
 
@@ -306,7 +306,7 @@ The blueprint writes `[ORG]` for the organisation's prefix (Naming Standard R13)
     - **Operate:** keep the operating rhythm and its single logs; build forum packs and draft minutes; build measures at process and unit level; keep versions with their re-approval dates and acknowledgements; run procedures as checklists; draft quarterly priorities; keep the value register.
     - **Improve:** watch processes through the projection, with their conformance; find bottlenecks, rework and control gaps; propose changes and new processes; design trials and have them judged by another seat; reassess the design on schedule; run the health check each quarter; hand its skills over and prepare the yearly drill without it.
     - **Always:** answer positions' questions from the decided design, with verified citations; trace every artefact both ways; export everything with its trace.
-  - **It does not:** decide anything for the organisation, the go or no-go included; give legal, tax, employment or pay advice; state an amount that no source or decision gives; ask any person anything about the organisation; name a person, or read who occupies a position; rank, score or watch the occupant of a position, or show a measure for a single position; change a design release; read records of work except through the projection, after Annex H holds; apply a change outside a class signed at level 2 (Annex G); act on a type of the Human Floor signature list.
+  - **It does not:** decide anything for the organisation, the go or no-go included; give legal, tax, employment or pay advice; state an amount that no source or decision gives; ask any person anything about the organisation; name a person, or read who occupies a position; rank, score or watch a single position, or show a measure for one; change a design release; read records of work except through the projection, after Annex H holds; apply a change outside a class signed at level 2 (Annex G); act on a type of the Human Floor signature list.
 - **Shapes it serves.** Any shape the design covers: one owner's work, a single entity, a group of entities, or a group with independent institutions inside it. Where a design covers several entities or jurisdictions, every brief and every go-live criterion records its entity and jurisdiction.
 - **Boundaries with other AIOCs.**
   - **`[ORG]AIOC-PPD`** designs processes, positions and units. This AIOC reads its decided release and returns defects; it never changes a release, and proposes later changes for decision (§5.22). A return is a request, never a change (§5.1; Annex B).
@@ -1137,7 +1137,7 @@ TEST-DI-DVT v1 · result `NOT_RUN`
 | Outputs | the version register, the acknowledgements and the checklist runs (Annex A.17); notices |
 | Performed by | the Chief of Staff, by code steps; no AI Cell writes these records |
 | Done when | every element shows `verified` or `due`; every changed version has a notice to every affected position and its acknowledgements by version |
-| Rules | 1. **Verified or due.** On its re-approval date an element shows `due`, never `verified`, until its owner position re-approves it; a reminder is raised on the date. 2. **Acknowledgement by version.** Each position a changed version concerns acknowledges that version through its HU port; the record holds the version and the position code. Only the gateway links an acknowledgement to whoever occupies the position. 3. **Notices.** A changed version sends a notice to every affected position. Pending acknowledgements are shown by version, never by position. 4. **Checklists.** A procedure runs as a checklist per case, with its gates and the approvals of the deciding positions, and an audit trail; or it is exported to the organisation's own workflow tool. 5. **Approvals are positions' acts.** An approval inside a checklist is always a deciding position's act at the gateway, never this AIOC's. 6. **Cases in flight.** A changed procedure applies to new cases; cases in flight follow the declared rule (`in_flight_rule`). 7. **The organisation's records.** Checklist runs are records of the organisation's work. This AIOC reads them for measures only through the projection (Annex H). |
+| Rules | 1. **Verified or due.** On its re-approval date an element shows `due`, never `verified`, until its owner position re-approves it; a reminder is raised on the date. 2. **Acknowledgement by version.** Each position a changed version concerns acknowledges that version through its HU port; the record holds the version and the position code. The gateway checks the credential the organisation's mechanism issued for that position; it never links an acknowledgement to a natural person (`49GAION/DR-0049`, `DR-0052`). 3. **Notices.** A changed version sends a notice to every affected position. Pending acknowledgements are shown by version, never by position. 4. **Checklists.** A procedure runs as a checklist per case, with its gates and the approvals of the deciding positions, and an audit trail; or it is exported to the organisation's own workflow tool. 5. **Approvals are positions' acts.** An approval inside a checklist is always a deciding position's act at the gateway, never this AIOC's. 6. **Cases in flight.** A changed procedure applies to new cases; cases in flight follow the declared rule (`in_flight_rule`). 7. **The organisation's records.** Checklist runs are records of the organisation's work. This AIOC reads them for measures only through the projection (Annex H). |
 
 #### Process (SOP)
 1. **Chief of Staff**: on each decided version, update the register, file the version into Source Lifecycle and send the notices → *version register; living design filing* (evidence: the filing receipt).
@@ -1521,7 +1521,7 @@ Every decision that only a human seat can take is listed here once. Silence deci
 | H-12 | Inside a run: rule on contested `MATERIAL` findings; accept a reduced level within H-06; approve a second run; attest T0 to T3 | the DI Delivery Lead | none taken; the step waits |
 | H-13 | Create `<org>aioc-di-records` and `-records-restricted`, recorded first (Naming Standard R9) | the Cell carrying `[ORG]HOAC-TM` | before the first run |
 | H-14 | Send the drafts of `upstream/` to the parts they concern | GOV | after this blueprint is approved |
-| H-15 | Approve this blueprint `v0.2.2` as the design of `[ORG]AIOC-DI`, slices 1 to 4 | the human hub | it stays a draft; nothing is installed |
+| H-15 | Approve this blueprint `v0.2.3` as the design of `[ORG]AIOC-DI`, slices 1 to 4 | the human hub | it stays a draft; nothing is installed |
 | H-16 | Open the service for a filed launch package, naming the parts switched on | Requesting Authority | none: no service |
 | H-17 | Process watching (Annex H): the impact assessment and its lawful basis; informing workers or their representatives where law requires; the projection and its connection (`connect-external-port`); then `process_watching` on | the data-protection position; the counsel position, on what the law requires; the Cell carrying `[ORG]HOAC-TM` | off |
 | H-18 | Each level-2 class, signed as `sign-standing-action-class`: reversible only, with no legal, pay or employment effect | the owner position | none: every class at level 1 |
@@ -1547,6 +1547,7 @@ Every decision that only a human seat can take is listed here once. Silence deci
 | v0.2.0 | 2026-10-18 | Complete, slices 1 to 4 (`decisions/DR-0004`): mode C and the light design (§5.11); the service, S5 Accompany (§5.12 to §5.16), S6 Operate (§5.17 to §5.20) and S7 Improve (§5.21 to §5.24); export (§5.25); drafts from the organisation's own templates and the cost draft (§5.6); the health check each quarter; answers at the point of work; the ladder with level 2 (Annex G); records of work through the projection (Annex H); three Pods and fourteen Cells added; TEST-DI v1, cases 51 to 94, added before any use | v1.6.0 at `acdcbe5` | this pull request |
 | v0.2.1 | 2026-10-19 | The Chief of Staff takes its COS code: `[ORG]CELL-DCS` → `[ORG]CELL-COSDI` (Naming Standard R16, `49GAION/DR-0028`; `decisions/DR-0005`). The old code is retired and kept in the card's lineage; the part test is renamed; nothing else changes | v1.6.0 at `acdcbe5` | this repository's pull request for this version |
 | v0.2.2 | 2026-10-29 | Released on the governing seat's word (`decisions/DR-0008`): it carries the records since v0.2.1, `decisions/DR-0006`, `decisions/DR-0007`; positions only (`49GAION/DR-0048`, `DR-0049`). Every card takes v0.2.2; the Protocol pin moves to the Operating Protocol `v2.1.0`. No other rule changes. |
+| v0.2.3 | 2026-10-29 | Corrections under `49GAION/DR-0052` (`decisions/DR-0009`): the gateway checks the position's credential and never links an acknowledgement to a natural person; Annex E cites Process and Position Design `v0.5.0`; the gateway runs as code beside the core. Every card takes v0.2.3. The Protocol pin moves to the Operating Protocol `v2.2.0`. No rule of this part is added or dropped. |
 
 ---
 
@@ -1642,8 +1643,8 @@ The parts inside this AIOC (`docs/CELLS-AND-PODS.md` of `49GAION-aioc`). The rol
 parts:
   defaults:
     accountable_to: "[ORG]CELL-DDL"
-    card_version: "v0.2.2"
-    version: "0.2.2"
+    card_version: "v0.2.3"
+    version: "0.2.3"
     lifecycle_state: "designed"
     test_version: "v1"
     test_owner: "[ORG]CELL-DDL"
@@ -1789,7 +1790,7 @@ Every part is a versioned, content-addressed object. Every element carries an ID
 
 **A.16 Measures and dashboards** (service records). Per measure: `measure_id`; `process_id` or `unit_id`; `step_id` or none; `definition`; `unit`; `source`; `target` (decision reference, or `not set`); `level` (`process`, `step`, `unit`); `positions_count` (at least `min_group`, or `rolled_up_to` the parent unit). Per dashboard figure: `measure_id`, `value`, `read_at`, `source_ref`. Adoption funnel, where switched on: per step, counts that entered and completed, aggregated.
 
-**A.17 Version register, acknowledgements and checklist runs** (service records). Version register, per element: `element_id`, `kind` (process, procedure, policy, job description, forum), `version`, `owner_position`, `approved_by`, `re_approval_due`, `status` (`verified`, `due`), `filed_ref`. Acknowledgement: `version_ref`, `position_id`, `acknowledged_at`; the sign-in behind it is held at the gateway only. Checklist run, per case: `case_id`, `procedure_ref` (its version), `gates[]` {`gate`, `approved_by` (a position's act at the gateway)}, `trail`, `in_flight_rule` (as applied).
+**A.17 Version register, acknowledgements and checklist runs** (service records). Version register, per element: `element_id`, `kind` (process, procedure, policy, job description, forum), `version`, `owner_position`, `approved_by`, `re_approval_due`, `status` (`verified`, `due`), `filed_ref`. Acknowledgement: `version_ref`, `position_id`, `acknowledged_at`; the gateway checks the position's credential with a fresh live sign-in and keeps no reference to a person. Checklist run, per case: `case_id`, `procedure_ref` (its version), `gates[]` {`gate`, `approved_by` (a position's act at the gateway)}, `trail`, `in_flight_rule` (as applied).
 
 **A.18 Problem record and issue list** (service records). `problem_id` (`PRB-n`), `reported_by` (position code), `process_id`, `step_id`, `statement`, `evidence`, `cause`, `options[]` {option, trade-offs}, `recommendation`, `deciding_position`, `decision` (reference), `actions` (action IDs). Issue list, per forum: `problem_id`s in order, each with its `effect` on the process and its measures.
 
@@ -1833,7 +1834,7 @@ Returns follow the Library's design return contract, `library/contracts/design-r
 3. Give legal, tax, employment or pay advice, write a final legal text, or state an amount that no source or decision gives.
 4. Ask any person anything about the organisation, or send a request that names a person.
 5. Name a person, read who occupies a position, or prepare a named offer.
-6. Rank, score or watch the occupant of a position, infer emotion, or show a measure for a single position.
+6. Rank, score or watch a single position, infer emotion, or show a measure for one.
 7. Read records of the organisation's work outside the projection, or before Annex H holds.
 8. Insert a draft into a live record, log or plan; apply a change outside a class signed at level 2 (Annex G).
 9. Answer a question from outside the decided design, or send an answer or draft whose citation failed verification.
@@ -1849,7 +1850,7 @@ Returns follow the Library's design return contract, `library/contracts/design-r
 
 ## Annex E. What is carried from the Target Operating Model blueprint
 
-This AIOC carries these rules from the blueprint of `[ORG]AIOC-TOM` `v0.6.0` (its writing repository, `<org>aioc-tom`), by section, not by copy, as `[ORG]AIOC-PPD` `v0.3.0` carries them (its Annex E). A change there reaches this AIOC only when this annex pins the new version.
+This AIOC carries these rules from the blueprint of `[ORG]AIOC-TOM` `v0.6.0` (its writing repository, `<org>aioc-tom`), by section, not by copy, as `[ORG]AIOC-PPD` `v0.5.0` carries them (its Annex E), the version of PPD that carries TOM `v0.6.0`. A change there reaches this AIOC only when this annex pins the new version.
 
 | Rule | TOM section | Read here with |
 |---|---|---|
